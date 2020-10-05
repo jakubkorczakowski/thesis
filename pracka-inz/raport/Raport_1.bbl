@@ -1,0 +1,103 @@
+\begin{thebibliography}{10}
+
+\bibitem{iCoseg}
+{\scshape Batra, D., Kowdle, A., Parikh, D., Luo, J., and Chen, T.}
+\newblock icoseg: Interactive co-segmentation with intelligent scribble
+  guidance.
+\newblock In {\em 2010 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition\/} (2010), IEEE, pp.~3169--3176.
+
+\bibitem{midfeatex}
+{\scshape Cao, X., Tao, Z., Zhang, B., Fu, H., and Feng, W.}
+\newblock Self-adaptively weighted co-saliency detection via rank constraint.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 23\/} (06 2014), 4175--4186.
+
+\bibitem{ChangLL11}
+{\scshape Chang, K.-Y., Liu, T.-L., and Lai, S.-H.}
+\newblock From co-saliency to co-segmentation: An efficient and fully
+  unsupervised energy minimization model.
+\newblock In {\em CVPR\/} (2011), IEEE Computer Society, pp.~2129--2136.
+
+\bibitem{imagenet_cvpr09}
+{\scshape Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L.}
+\newblock {ImageNet: A Large-Scale Hierarchical Image Database}.
+\newblock In {\em CVPR09\/} (2009).
+
+\bibitem{cs231n}
+{\scshape Fei-Fei~Li, Justin~Johnson, S.~Y.}
+\newblock Cs231n: Convolutional neural networks for visual recognition.
+
+\bibitem{bott}
+{\scshape Fu, H., Cao, X., and Tu, Z.}
+\newblock Cluster-based co-saliency detection.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 22\/} (04 2013).
+
+\bibitem{cifar}
+{\scshape Krizhevsky, A., Nair, V., and Hinton, G.}
+\newblock Cifar-10 (canadian institute for advanced research).
+
+\bibitem{NIPS2012_4824}
+{\scshape Krizhevsky, A., Sutskever, I., and Hinton, G.~E.}
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems 25},
+  F.~Pereira, C.~J.~C. Burges, L.~Bottou, and K.~Q. Weinberger, Eds. Curran
+  Associates, Inc., 2012, pp.~1097--1105.
+
+\bibitem{ImagePair}
+{\scshape Li, H., and Ngan, K.}
+\newblock A co-saliency model of image pairs.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 20\/} (05 2011), 3365--75.
+
+\bibitem{10.1109/TPAMI.2016.2572683}
+{\scshape Shelhamer, E., Long, J., and Darrell, T.}
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell. 39}, 4 (Apr. 2017),
+  640–651.
+
+\bibitem{SimonyanZ14a}
+{\scshape Simonyan, K., and Zisserman, A.}
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em CoRR abs/1409.1556\/} (2014).
+
+\bibitem{MSRC}
+{\scshape Winn, J., Criminisi, A., and Minka, T.}
+\newblock Object categorization by learned universal visual dictionary.
+\newblock {\em Computer Vision, 2005. ICCV 2005. Tenth IEEE International
+  Conference on 2\/} (17-21 Oct 2005), 1800--1807.
+
+\bibitem{10.1145/3158674}
+{\scshape Zhang, D., Fu, H., Han, J., Borji, A., and Li, X.}
+\newblock A review of co-saliency detection algorithms: Fundamentals,
+  applications, and challenges.
+\newblock {\em ACM Trans. Intell. Syst. Technol. 9}, 4 (Jan. 2018).
+
+\bibitem{highfeatex}
+{\scshape Zhang, D., Han, J., Han, J., and Shao, L.}
+\newblock Cosaliency detection based on intrasaliency prior transfer and deep
+  intersaliency mining.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems 27\/}
+  (11 2015), 1--14.
+
+\bibitem{cosal2015}
+{\scshape Zhang, D., Han, J., Li, C., Wang, J., and Li, X.}
+\newblock Detection of co-salient objects by looking deep and wide.
+\newblock {\em International Journal of Computer Vision 120\/} (04 2016).
+
+\bibitem{10.1109/TPAMI.2016.2567393}
+{\scshape Zhang, D., Meng, D., and Han, J.}
+\newblock Co-saliency detection via a self-paced multiple-instance learning
+  framework.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell. 39}, 5 (May 2017),
+  865–878.
+
+\bibitem{Zhang_2019_CVPR}
+{\scshape Zhang, K., Li, T., Liu, B., and Liu, Q.}
+\newblock Co-saliency detection via mask-guided fully convolutional networks
+  with multi-scale label smoothing.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)\/} (June 2019).
+
+\end{thebibliography}

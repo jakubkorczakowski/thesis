@@ -1,0 +1,24 @@
+\BOOKMARK [0][-]{chapter.1}{Wstep}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Rozpoznawanie obraz\363w}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Zbi\363r danych}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Liniowe klasyfikatory}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Wieloklasowy klasyfikator SVM}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{Klasyfikator Softmax}{section.2.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Sieci neuronowe}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Splotowe sieci neuronowe}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Warstwy w sieci splotowej}{chapter.3}% 9
+\BOOKMARK [2][-]{subsection.3.1.1}{Siec VGGNet}{section.3.1}% 10
+\BOOKMARK [1][-]{section.3.2}{Transfer Learning}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Wykrywanie wsp\363\233wystepowania}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Opis problemu}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{Przeglad metodyki}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.2.1}{Podejscie oddolne}{section.4.2}% 15
+\BOOKMARK [2][-]{subsection.4.2.2}{Podejscie \233aczace}{section.4.2}% 16
+\BOOKMARK [2][-]{subsection.4.2.3}{Podejscie oparte o uczenie}{section.4.2}% 17
+\BOOKMARK [1][-]{section.4.3}{Ocena algorytm\363w}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.3.1}{Zbiory danych}{section.4.3}% 19
+\BOOKMARK [2][-]{subsection.4.3.2}{Miary oceny}{section.4.3}% 20
+\BOOKMARK [0][-]{chapter.5}{Rozwiazanie zaprezentowane w artykule}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Opis}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Implementacja}{chapter.5}% 23
+\BOOKMARK [0][-]{section.5.2}{Bibliografia}{}% 24

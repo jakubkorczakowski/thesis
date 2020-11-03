@@ -220,7 +220,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	\text{Co-saliency} = \sum_i \text{Weight}_i \cdot \text{Submap}_i
 	$$
 
-	Typowym podejściem wykorzystującym to podejście jest \cite{midfeatex}. Mając macierz cech $\mathbf{H} = [\mathbf{H}^1, \mathbf{H}^2, \dots, \mathbf{H}^K]^T \in R^{M x D}$, $K$, $M$ oraz $D$ oznaczają odpowiednio liczbę obrazów, liczbę wyznaczonych map dla każdego obrazu oraz wymiar danej cechy. Powtarzalność pomiędzy tymi mapami może być wyznaczona jako:
+	Typowym podejściem wykorzystującym to podejście jest \cite{midfeatex}. Mając macierz cech $\mathbf{H} = [\mathbf{H}^1, \mathbf{H}^2, \dots, \mathbf{H}^K]^T \in R^{M \times D}$, $K$, $M$ oraz $D$ oznaczają odpowiednio liczbę obrazów, liczbę wyznaczonych map dla każdego obrazu oraz wymiar danej cechy. Powtarzalność pomiędzy tymi mapami może być wyznaczona jako:
 
 	$$
 	\arg\min_{\mathbf{L}, \mathbf{E}} \left(\|\mathbf{L}\|_* + \lambda\|\mathbf{E}\|_1\right)

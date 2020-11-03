@@ -1,25 +1,25 @@
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{2}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}Rozpoznawanie obraz\IeC {\'o}w}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Zbi\IeC {\'o}r danych}{4}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Liniowe klasyfikatory}{4}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Wieloklasowy klasyfikator SVM}{6}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Klasyfikator Softmax}{6}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}Sieci neuronowe}{7}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}Splotowe sieci neuronowe}{9}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Warstwy w sieci splotowej}{10}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Sie\IeC {\'c} VGGNet}{11}{subsection.3.1.1}% 
-\contentsline {section}{\numberline {3.2}Transfer Learning}{12}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Wykrywanie wsp\IeC {\'o}\IeC {\l }wyst\IeC {\k e}powania}{14}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Opis problemu}{14}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Przegl\IeC {\k a}d metodyki}{15}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Podej\IeC {\'s}cie oddolne}{16}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Podej\IeC {\'s}cie \IeC {\l }\IeC {\k a}cz\IeC {\k a}ce}{17}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Podej\IeC {\'s}cie oparte o uczenie}{18}{subsection.4.2.3}% 
-\contentsline {section}{\numberline {4.3}Ocena algorytm\IeC {\'o}w}{19}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Zbiory danych}{19}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Miary oceny}{20}{subsection.4.3.2}% 
-\contentsline {chapter}{\numberline {5}Rozwi\IeC {\k a}zanie zaprezentowane w artykule}{22}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Opis}{22}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Implementacja}{23}{section.5.2}% 
-\contentsline {chapter}{Bibliografia}{23}{section.5.2}% 
+\contentsline {chapter}{\numberline {1}Wstęp}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Rozpoznawanie obrazów}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Zbiór danych}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Liniowe klasyfikatory}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Wieloklasowy klasyfikator SVM}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Klasyfikator Softmax}{6}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Sieci neuronowe}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Splotowe sieci neuronowe}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Warstwy w sieci splotowej}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Sieć VGGNet}{11}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Transfer Learning}{12}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Wykrywanie współwystępowania}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Opis problemu}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Przegląd metodyki}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Podejście oddolne}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Podejście łączące}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Podejście oparte o uczenie}{18}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Ocena algorytmów}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Zbiory danych}{19}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Miary oceny}{20}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Rozwiązanie zaprezentowane w artykule}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Opis}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Implementacja}{23}{section.5.2}%
+\contentsline {chapter}{Bibliografia}{23}{section.5.2}%

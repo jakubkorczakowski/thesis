@@ -1,0 +1,11 @@
+*.venv
+*.vscode
+
+# latex
+*.aux
+*.fdb
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk

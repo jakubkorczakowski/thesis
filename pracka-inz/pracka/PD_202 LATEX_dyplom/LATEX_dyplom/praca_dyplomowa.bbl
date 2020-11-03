@@ -1,0 +1,108 @@
+\begin{thebibliography}{10}
+
+\bibitem{iCoseg}
+{\sc Batra, D., Kowdle, A., Parikh, D., Luo, J., and Chen, T.}
+\newblock icoseg: Interactive co-segmentation with intelligent scribble
+  guidance.
+\newblock In {\em 2010 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition\/} (2010), IEEE, pp.~3169--3176.
+
+\bibitem{midfeatex}
+{\sc Cao, X., Tao, Z., Zhang, B., Fu, H., and Feng, W.}
+\newblock Self-adaptively weighted co-saliency detection via rank constraint.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 23\/} (06 2014), 4175--4186.
+
+\bibitem{ChangLL11}
+{\sc Chang, K.-Y., Liu, T.-L., and Lai, S.-H.}
+\newblock From co-saliency to co-segmentation: An efficient and fully
+  unsupervised energy minimization model.
+\newblock In {\em CVPR\/} (2011), IEEE Computer Society, pp.~2129--2136.
+
+\bibitem{fan2020rethinking}
+{\sc Fan, D.-P., Li, T., Lin, Z., Ji, G.-P., Zhang, D., Cheng, M.-M., Fu, H.,
+  and Shen, J.}
+\newblock Re-thinking co-salient object detection, 2020.
+
+\bibitem{bott}
+{\sc Fu, H., Cao, X., and Tu, Z.}
+\newblock Cluster-based co-saliency detection.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 22\/} (04 2013).
+
+\bibitem{Judd_2009}
+{\sc Judd, T., Ehinger, K., Durand, F., and Torralba, A.}
+\newblock Learning to predict where humans look.
+\newblock In {\em IEEE International Conference on Computer Vision (ICCV)\/}
+  (2009).
+
+\bibitem{ImagePair}
+{\sc Li, H., and Ngan, K.}
+\newblock A co-saliency model of image pairs.
+\newblock {\em IEEE transactions on image processing : a publication of the
+  IEEE Signal Processing Society 20\/} (05 2011), 3365--75.
+
+\bibitem{cam}
+{\sc {Li}, L., {Liu}, Z., {Zou}, W., {Zhang}, X., and {Le Meur}, O.}
+\newblock Co-saliency detection based on region-level fusion and pixel-level
+  refinement.
+\newblock In {\em 2014 IEEE International Conference on Multimedia and Expo
+  (ICME)\/} (2014), pp.~1--6.
+
+\bibitem{lin2017feature}
+{\sc Lin, T.-Y., Dollár, P., Girshick, R., He, K., Hariharan, B., and
+  Belongie, S.}
+\newblock Feature pyramid networks for object detection, 2017.
+
+\bibitem{Selvaraju_2019}
+{\sc Selvaraju, R.~R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., and
+  Batra, D.}
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock {\em International Journal of Computer Vision 128}, 2 (Oct 2019),
+  336–359.
+
+\bibitem{SimonyanZ14a}
+{\sc Simonyan, K., and Zisserman, A.}
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em CoRR abs/1409.1556\/} (2014).
+
+\bibitem{duts}
+{\sc Wang, L., Lu, H., Wang, Y., Feng, M., Wang, D., Yin, B., and Ruan, X.}
+\newblock Learning to detect salient objects with image-level supervision.
+\newblock pp.~3796--3805.
+
+\bibitem{MSRC}
+{\sc Winn, J., Criminisi, A., and Minka, T.}
+\newblock Object categorization by learned universal visual dictionary.
+\newblock {\em Computer Vision, 2005. ICCV 2005. Tenth IEEE International
+  Conference on 2\/} (17-21 Oct 2005), 1800--1807.
+
+\bibitem{highfeatex}
+{\sc Zhang, D., Han, J., Han, J., and Shao, L.}
+\newblock Cosaliency detection based on intrasaliency prior transfer and deep
+  intersaliency mining.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems 27\/}
+  (11 2015), 1--14.
+
+\bibitem{cosal2015}
+{\sc Zhang, D., Han, J., Li, C., Wang, J., and Li, X.}
+\newblock Detection of co-salient objects by looking deep and wide.
+\newblock {\em International Journal of Computer Vision 120\/} (04 2016).
+
+\bibitem{10.1109/TPAMI.2016.2567393}
+{\sc Zhang, D., Meng, D., and Han, J.}
+\newblock Co-saliency detection via a self-paced multiple-instance learning
+  framework.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell. 39}, 5 (May 2017),
+  865–878.
+
+\bibitem{zhang2020gradientinduced}
+{\sc Zhang, Z., Jin, W., Xu, J., and Cheng, M.-M.}
+\newblock Gradient-induced co-saliency detection, 2020.
+
+\bibitem{zhao2019egnetedge}
+{\sc Zhao, J.-X., Liu, J., Fan, D.-P., Cao, Y., Yang, J., and Cheng, M.-M.}
+\newblock Egnet:edge guidance network for salient object detection, 2019.
+
+\end{thebibliography}

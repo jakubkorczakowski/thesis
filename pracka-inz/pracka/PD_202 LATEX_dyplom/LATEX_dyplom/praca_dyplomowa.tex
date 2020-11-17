@@ -136,7 +136,7 @@ Cel pracy, motywacja itp.
 \chapter{Współistotność}
 \textcolor{red}{\textbf{TODO - 31.10.2020}}
 
-Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względnie nowy problem dziedziny przetwarzania obrazów cyfrowych. Jako nowy dział wykrywania istotnych obiektów na obrazach (salient object detection), zajmuje się poszukiwaniem częstych i istotnych obiektów w grupie kilku obrazów. Obecne algorytmy wykrywania współistotnych obiektów składają się najczęściej z trzech części: wyodrębnienia odpowiednich cech w celu reprezentacji obiektów na obrazie, analizy czynników  charakteryzujących współwystępowanie oraz stworzenia efektywnego obliczeniowo systemu do wyznaczania współistotnych obiektów. 
+Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względnie nowy problem dziedziny przetwarzania obrazów cyfrowych \cite{10.1145/3158674}. Jako nowy dział wykrywania istotnych obiektów na obrazach (salient object detection), zajmuje się poszukiwaniem częstych i istotnych obiektów w grupie kilku obrazów. Obecne algorytmy wykrywania współistotnych obiektów składają się najczęściej z trzech części: wyodrębnienia odpowiednich cech w celu reprezentacji obiektów na obrazie, analizy czynników  charakteryzujących współwystępowanie oraz stworzenia efektywnego obliczeniowo systemu do wyznaczania współistotnych obiektów. 
 	 
 	\section{Przewidywanie istotności}
 	Podczas interakcji człowieka z komputerem bardzo często występuje potrzeba określenia, na których obszarach skupiona jest uwaga użytkownika. Wiedza ta może zostać wykorzystana m. in. w automatycznym przycinaniu zdjęć, kompresji wideo oraz optymalizacji reklam. Jednym ze sposobów na pozyskanie takich danych jest użycie urządzenia do śledzenia ruchów gałek ocznych. Podczas tego procesu badany siada przed komputerem z założonym urządzeniem, które bada gdzie użytkownik skupia swój wzrok. Urządzenie to jest jednak kosztowne, a sam proces skomplikowany. W związku z tym zostały stworzone modele, które przewidują, które obszary są istotne oraz na których obszarach skupiona zostanie uwaga.
@@ -151,7 +151,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	\end{figure}
 
 	\section{Wykrywanie istotnych obiektów}
-	Innym zdefiniowanym problemem jest wykrywanie istotnych obiektów (salient object detection), który obejmuje wykrywanie najbardziej istotnych obiektów. Wykorzystanie tego algorytmu to m. in. opisywanie obrazów, wykrywanie obiektów, segmentacja obrazów, streszczanie wideo oraz identyfikacja ludzi. Od przewidywania istotności różni się tym, że poszukuje istotnych obiektów, a nie punktów skupienia uwagi. Historia algorymtów wykrywania istotnych obiektów jest dosyć krótka, początkowo przeważały metody oparte o cechy niskopoziomowe oraz heurystyki(np. kontrast kolorów). Obecnie najczęściej stosuje się metody oparte o uczenie głębokie. Wykorzystuje się splotowe sieci neuronowe, takie jak FCN oraz sieci oparte o kapsuły.
+	Innym zdefiniowanym problemem jest wykrywanie istotnych obiektów (salient object detection), który obejmuje wykrywanie najbardziej wyróżniających się obiektów. Wykorzystanie tego algorytmu to m. in. opisywanie obrazów, wykrywanie obiektów, segmentacja obrazów, streszczanie wideo oraz identyfikacja ludzi. Od przewidywania istotności różni się tym, że poszukuje istotnych obiektów, a nie punktów skupienia uwagi. Historia algorymtów wykrywania istotnych obiektów jest dosyć krótka, początkowo przeważały metody oparte o cechy niskopoziomowe oraz heurystyki(np. kontrast kolorów). Obecnie najczęściej stosuje się metody oparte o uczenie głębokie. Wykorzystuje się splotowe sieci neuronowe, takie jak FCN oraz sieci oparte o kapsuły.
 
 	\section{Wykrywanie współistotnych obiektów}
 	Zagadnienie wykrywania współistotnych obiektów (co-salient object detection) stara się wykryć występowanie powtarzalnych oraz istotnych (w sensie postrzegania przez człowieka) regionów w grupie powiązanych ze sobą obrazów. Wykrywanie współistotnych obiektów znajduje swoje zastosowanie jako element przygotowania danych w wielu aplikacjach, takich jak wspólna segmentacja kilku obrazów lub filmu, lokalizacja obiektów, analiza nagrań z kamer bezpieczeństwa oraz wyszukiwanie za pomocą obrazów. 
@@ -162,7 +162,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.6\textwidth]{\ImgPath/rys/cosaliency.png}
-		\caption{Przykład podziału grupy obrazów na obszary powtarzające się. Zadaniem algorytmu wykrywania współistotnych obiektów jest stworzenie mapy współistotności pokazującej wspólne obszary istotności.}
+		\caption{Przykład podziału grupy obrazów na obszary powtarzające się. Zadaniem algorytmu wykrywania współistotnych obiektów jest stworzenie mapy współistotności pokazującej wspólne obszary istotności. Źródło obrazu: \cite{10.1145/3158674}}
 		\label{co}
 	\end{figure}
 
@@ -172,7 +172,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{\ImgPath/rys/cosal_met.png}
-		\caption{Podział algorymtów wykrywania współistotnych obiektów.}
+		\caption{Podział algorymtów wykrywania współistotnych obiektów. Źródło obrazu: \cite{10.1145/3158674}}
 		\label{pod}
 	\end{figure}
 
@@ -193,22 +193,20 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 
 	Jedną z najczęściej stosowanych metod oddolnych, jest taka, która wykorzystuje mechanizm klasteryzacji oparty o trzy metryki istotności. Dla każdego klastra $t$ jego współwystępowanie określone jest jako:
 
-	$$
+	\begin{equation}
 		\text{Co-saliency}^t = Cue^t_{Con} \times Cue^t_{Spa} \times Cue^t_{Corr}
-	$$
+	\end{equation}
+	gdzie:
 
-	gdzie
-
-	$$
+	\begin{equation}
 		Cue^t_{Con} = \sum_{\tau \neq t} \frac{n^\tau}{N}\left(\|\mathbf{u}^\tau - \mathbf{u}^t\|_2\right)
-	$$
-	$$
+	\end{equation}
+	\begin{equation}
 		Cue^t_{Spa} = \frac{1}{n^t}\sum_{p \in C_t} \mathcal{N}\left(\|\mathbf{z}_p - \mathbf{o}_p\|_2|0,\sigma^2\right)
-	$$
-	$$
+	\end{equation}
+	\begin{equation}
 		Cue^t_{Corr} = 1/\left(\text{Var}\left(\mathbf{q}^t\right)+1\right)
-	$$
-
+	\end{equation}
 	gdzie $Cue^t_{Con}$, $Cue^t_{Spa}$ i $Cue^t_{Corr}$ oznaczają odpowiednio metryki kontrastu, przestrzeni oraz zgodności. $\mathbf{u}^t$, $n^t$ oraz $\mathbf{q}^t$ oznaczają odpowiedznio centrum klastra, liczbę pikseli oraz dystrybujcę klastra $C_t$. Estymator jądrowy gęstości o jądrze normalnym $\mathcal{N}(\cdot)$ służy do wyznaczenia metryki euklidesowej pomiędzy $\mathbf{z}_p$ (współrzędnymi piksela p) oraz współrzędnymi centrum odpowiedniego obrazu $\mathbf{o}_p$. $\text{Var}\left(\mathbf{q}^t\right)$ oznacza wariancję histogramu $\mathbf{q}^t$. Algorytm jest dokładniej opisany w \cite{bott}.
 
 	Metody wykorzystujące podejście oddolne są najczęściej używane w zadaniu wykrywania współistotnych obiektów. Problemem tych metod jest jednak potrzeba ręcznego stworzenia odpowiednich metryk istotności. Metryki te są najczęściej zbytnio dostosowane do konkretnego zadania i słabo radzą sobie z generalizacją.
@@ -222,23 +220,23 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 
 	Typowym podejściem wykorzystującym to podejście jest \cite{midfeatex}. Mając macierz cech $\mathbf{H} = [\mathbf{H}^1, \mathbf{H}^2, \dots, \mathbf{H}^K]^T \in R^{M \times D}$, $K$, $M$ oraz $D$ oznaczają odpowiednio liczbę obrazów, liczbę wyznaczonych map dla każdego obrazu oraz wymiar danej cechy. Powtarzalność pomiędzy tymi mapami może być wyznaczona jako:
 
-	$$
-	\arg\min_{\mathbf{L}, \mathbf{E}} \left(\|\mathbf{L}\|_* + \lambda\|\mathbf{E}\|_1\right)
-	$$
+	\begin{equation}
+		\arg\min_{\mathbf{L}, \mathbf{E}} \left(\|\mathbf{L}\|_* + \lambda\|\mathbf{E}\|_1\right)
+	\end{equation}
 
-	$$
+	\begin{equation}
 	\mathbf{H} = \mathbf{L} + \mathbf{E}
-	$$
+	\end{equation}
+	gdzie $\|\cdot\|_*$ oznacza normę macierzy, a $\|\cdot\|_1$ jej normę $l_1$. Macierz $\mathbf{E}$ jest macierzą błędów między macierzą $\mathbf{H}$ oraz macierzą rang $\mathbf{L}$, gdzie $\mathbf{E}^k=[\mathbf{e}^k_1, \mathbf{e}^k_2, \dots, \mathbf{e}^k)M]^T \in R^{M \times D}$ jest macierzą błędu $k$-tego obrazu. Zatem waga $w^k_j$ dla $j$-tej mapy $k$-tego obrazu może zostać wyznaczona jako:
 
-	gdzie $\|\cdot\|_*$ oznacza normę macierzy, a $\|\cdot\|_1$ jej normę $l_1$. Macierz $\mathbf{E}$ jest macierzą błędów między macierzą $\mathbf{H}$ oraz macierzą rang $\mathbf{L}$, gdzie $\mathbf{E}^k=[\mathbf{e}^k_1, \mathbf{e}^k_2, \dots, \mathbf{e}^k)M]^T \in R^{M x D}$ jest macierzą błędu $k$-tego obrazu. Zatem waga $w^k_j$ dla $j$-tej mapy $k$-tego obrazu może zostać wyznaczona jako:
-
-	$$
+	\begin{equation}
 	w^k_j = \frac{\exp(\zeta^k_j)}{\sum^M_{j=1}\exp(\zeta^k_j)}
-	$$
+	\end{equation}
 
-	$$
-	\exp(\zeta^k_j) = -\|e^k_j\|_2
-	$$
+
+	\begin{equation}
+		\exp(\zeta^k_j) = -\|e^k_j\|_2
+	\end{equation}
 	
 	Metody wykorzystujące podejście łączące zazwyczaj osiągają wyniki pozwalające sądzić, że są w stanie rozwinąć się korzystając z istniejących algorytmów wykrywania współistotnych obiektów. Kolejnym plusem tej grupy algorytmów jest fakt, że istnieje możliwość dodania ich jako kolejna warstwa w procesie przetwarzania, w którym zaimplementowane są już algorytmy wykrywania współistotnych obiektów. Ich wadą jest jednak to, że opierają swoje działania o istniejące algorytmy wykorzystujące podejście oddolne, powielając wady tej grupy algorymtów.
 
@@ -247,18 +245,17 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 
 	Przykładem z algrytmu z tej grupy może być algorytm opisany w \cite{10.1109/TPAMI.2016.2567393}. Zakładamy, że mamy grupę zdjęć $K_+$ opisaną jako zbiór pozytywny oraz wyszukaną grupę zdjęć $K_-$ opisaną jako zbiór negatywny. Dla każdego obrazu wyznaczamy superpiksele wraz z reprezentacją cech $\mathbf{x}_i^{(k)}$, które traktowane są jako obiekty do klasyfikacji, gdzie $k \in [1, K]$, $K=K_+ + K_-$ oznacza index w zbiorze dla każdego obrazu, a $i \in [1, n_k]$ oznacza indeks superpiksela obiektu dla każdego $k$-zbioru. Funkcja kosztu jest zdefiniowana jako:
 
-	$$
+	\begin{equation}
 		\min_{\mathbf{w},b,\mathbf{y}^{(1)}, \dots, \mathbf{y}^{(K_+)},\mathbf{v}\in[0,1]^n} E(\mathbf{w},b,\mathbf{y}^{(1)}, \dots, \mathbf{y}^{(K_+)},\mathbf{v}) = 
-	$$
+	\end{equation}
 
-	$$
-	\frac{1}{2} \|\mathbf{w}\|^2_2 + \sum_{k=1}^K \sum_{i=1}^{n_k}v_i^{(k)} L(y_i^{(k)}, g(\mathbf{x}^{(k)}_i;\mathbf{w},b)) + f(\mathbf{v};\lambda, \gamma)
-	$$
+	\begin{equation}
+		\frac{1}{2} \|\mathbf{w}\|^2_2 + \sum_{k=1}^K \sum_{i=1}^{n_k}v_i^{(k)} L(y_i^{(k)}, g(\mathbf{x}^{(k)}_i;\mathbf{w},b)) + f(\mathbf{v};\lambda, \gamma)
+	\end{equation}
 
-	$$
+	\begin{equation}
 	\|\mathbf{y}^{(k)}+1\|_0 \geq 1, k=1,2,\dots,K_+
-	$$
-
+	\end{equation}
 	gdzie $\mathbf{v} = [v_1^{(1)}, \dots, v_{n_1}^{(1)}, v_{1}^{(2)}, \dots, v_{n_2}^{(2)}, \dots, v_{n_k}^{(K)}] \in R^{n}$ oznacza znaczenie wag dla obiektów, $\mathbf{y} = [y_1^{(k)}, y_{2}^{(k)}, \dots, y_{n_k}^{(k)}] \in R^{n_k}$ oznacza etykiety dla obiektu $k$-tego zbioru, $L(y_i^{(k)}, g(\mathbf{x}^{(k)}_i;\mathbf{w},b))$ oznacza funkcję kosztu $\mathbf{x}_i^{(k)}$ dla klasyfikatora SVM $g(\mathbf{x}^{(k)}_i;\mathbf{w},b)$ z~wektorem wag $\mathbf{w}$ oraz parametrem bias b. Ograniczenie powoduje, że będzie istniał przynajmniej jeden pozytywny obiekt dla każdego pozytywnego zbioru. $f(\mathbf{v};\lambda, \gamma)$ jest funkcją regularyzacji.
 
 	W przypadku algorytmów wykrywania współistotnych obiektów tego rodzaju wiedza obiektach współwystępujących poznawana jest przez algorytm w procesie uczenia, zamiast w rezultacie ręcznie zaprojektowanych metryk. Algorytmy uczenia maszynowego są w stanie znaleźć bardziej skomplikowane zależności w danych od człowieka, ponieważ metryki wymyślane przez człowieka są najczęściej nadmiernie dostosowane do konkretnego zadania i mają słabą zdolność generalizacji. Wadą algorytmów opartych o uczenie jest czas potrzebny w etapie treningu.
@@ -266,17 +263,18 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 
 
 	\section{Ocena algorytmów}
+	Algorytmy wykrywania współistotnych obiektów sprawdzane były najczęściej na czterech publicznych zbiorach danych: Image Pair \cite{ImagePair}, iCoseg \cite{iCoseg}, MSRC \cite{MSRC} oraz Cosal2015 \cite{cosal2015}. Przykładowe obrazy z każdego zbioru przedstawione są na rysunku \ref{ds}. 
+
 	\subsection{Zbiory danych}
-	Algorytmy wykrywania współistotnych obiektów sprawdzane były najczęściej na czterech publicznych zbiorach danych: Image Pair \cite{ImagePair}, iCoseg \cite{iCoseg}, MSRC \cite{MSRC} oraz Cosal2015 \cite{cosal2015}. Przykładowe obrazy z każdego zbioru przedstawione są na rysunku \ref{ds}.
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{\ImgPath/rys/datasets.png}
-		\caption{Przykładowe obrazy ze zbiorów danych służących do oceny algorytmów wykrywania współistotnych obiektów.}
+		\caption{Przykładowe obrazy ze zbiorów danych służących do oceny algorytmów wykrywania współistotnych obiektów. Źródło obrazów: \cite{10.1145/3158674}}
 		\label{ds}
 	\end{figure}
 
-	Zbiór danych Image Pair zawiera 105 par obrazów (razem 210 obrazów) o rozdzielczości 128x100 pikseli. Posiada ręcznie określane wartości prawdy i jest pierwszym zbiorem danych dla zadania wykrywania współistotnych obiektów. Każda z par obrazów zawiera podobne obiekty znajdujące się na różnym tle. W tym zbiorze danych tło jest mniej zróżnicowane niż w innych zbiorach. Obecnie zbiór ten nie jest często używany, ponieważ nie jest wystarczająco wymagający dla nowoczesnych algorytmów.
+	Zbiór danych Image Pair \cite{ImagePair} zawiera 105 par obrazów (razem 210 obrazów) o rozdzielczości 128x100 pikseli. Posiada ręcznie określane wartości prawdy i jest pierwszym zbiorem danych dla zadania wykrywania współistotnych obiektów. Każda z par obrazów zawiera podobne obiekty znajdujące się na różnym tle. W tym zbiorze danych tło jest mniej zróżnicowane niż w innych zbiorach. Obecnie zbiór ten nie jest często używany, ponieważ nie jest wystarczająco wymagający dla nowoczesnych algorytmów.
 	
 	% \begin{figure}[h]
 	% 	\centering
@@ -298,15 +296,16 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	% 	\end{tabular}}
 	% \end{table}
 
-	Zbiór iCoseg jest otwartym zbiorem danych. Posiada 38 grup obrazów (643 razem), jak również wartości prawdy dobrane ręcznie dla każdego piksela. W odróżnieniu od zbioru Image Pair grupy zawierają od 4 do 42 obrazów. Obrazy w tym zbiorze charakteryzują się najczęściej zróżnicowanym tłem oraz kilkoma obiektami na obrazie. Zbiór ten jest jednym z najczęsciej używanych podczas ewaluacji algorytmów wykrywania współistotnych obiektów.
+	Zbiór iCoseg \cite{iCoseg} jest otwartym zbiorem danych. Posiada 38 grup obrazów (643 razem), jak również wartości prawdy dobrane ręcznie dla każdego piksela. W odróżnieniu od zbioru Image Pair grupy zawierają od 4 do 42 obrazów. Obrazy w tym zbiorze charakteryzują się najczęściej zróżnicowanym tłem oraz kilkoma obiektami na obrazie. Zbiór ten jest jednym z najczęsciej używanych podczas ewaluacji algorytmów wykrywania współistotnych obiektów.
 
-	Kolejnym często używanym zbiorem jest zbiór MSRC. Zawiera on 8 grup (razem 240 obrazów) wraz z prawdą ręcznie dobraną dla każdego piksela. Grupy obrazów to np. samoloty, rowery lub samochody. Istnieje również grupa zawierająca trawę, jednak nie jest ona zazwyczaj używana w zadaniu wykrywania współistotnych obiektów, ponieważ ich nie zawiera.
+	Kolejnym często używanym zbiorem jest zbiór MSRC \cite{MSRC}. Zawiera on 8 grup (razem 240 obrazów) wraz z prawdą ręcznie dobraną dla każdego piksela. Grupy obrazów to np. samoloty, rowery lub samochody. Istnieje również grupa zawierająca trawę, jednak nie jest ona zazwyczaj używana w zadaniu wykrywania współistotnych obiektów, ponieważ ich nie zawiera.
 
-	Nowszym zbiorem danych jest Cosal2015. Posiada on 50 grup zdjęć (2015 razem) zebranych z konkursu ILSVRC2014 oraz filmów w serwisie YouTube. Tła obrazów w tym zbiorze są mocno zróżnicowane. Dodatkowo często na jednym obrazie znajduje się kilka obiektów istotnych, których część nie występuje na innych obrazach w grupie.
+	Nowszym zbiorem danych jest Cosal2015 \cite{cosal2015}. Posiada on 50 grup zdjęć (2015 razem) zebranych z konkursu ILSVRC2014 oraz filmów w serwisie YouTube. Tła obrazów w tym zbiorze są mocno zróżnicowane. Dodatkowo często na jednym obrazie znajduje się kilka obiektów istotnych, których część nie występuje na innych obrazach w grupie.
 
 	Obecnie zaproponowane zsotały dwa nowe zbiory danych. Zbiór CoSOD3k \cite{fan2020rethinking} zawiera 3316 obrazów ze zbioru ILSVRC, podzielonych na 160 grup. Obrazy posiadają opisy przyporządkowujące je do klas oraz 13 superklas. Zbiór ten różni się od wcześniej opisanych tym, że posiada bardziej realistyczne sceny, na których trudniej wykryć obiekty. Posiada on również obrazy, na których znajdują się dwie lub trzy instancje obiektu. W tabeli powyżej zbiory danych porównane są pod kątem wielkości obiektu oraz liczby instancji.
 
 	\begin{table}[]
+		\caption{Porównanie liczby instancji obiektów w podanych zbiorach danych.}
 		\begin{tabular}{c||ccc||ccc}
 		\hline
 				   & \multicolumn{3}{c||}{Wielkość instancji/obiektu}             & \multicolumn{3}{c}{Liczba instancji} \\
@@ -324,7 +323,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=1\textwidth]{\ImgPath/rys/CoCA.png}
-		\caption{Przykłady obrazów ze zbioru danych CoCA.}
+		\caption{Przykłady obrazów ze zbioru danych CoCA. Źródło obrazu: \cite{zhang2020gradientinduced}}
 		\label{CoCA}
 	\end{figure}
 
@@ -334,15 +333,15 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 
 	Krzywa PR oraz miara AP wyznaczane są poprzez podział pikseli w mapie istostności na istotne oraz nieistotne. W rezultacie miara czułości zestawiona z miarą precyzji tworzy krzywą PR. Pole pod krzywą wyznacza miarę średniej prezyzji (AP). Krzywa ROC jest wyznaczana w podobny sposób, brane pod uwage są jednak miary liczby fałszywie dodatnich oraz prawdziwie dodatnich przykładów. Miara AUC wyznaczana jest jako pole pod krzywą ROC. Precyzja i czułość zdefiniowane są jako:
 
-	$$
+	\begin{equation}
 		Precision = \frac{TP}{TP + FP}, \; Recall = \frac{TP}{TP + FN}
-	$$
+	\end{equation}
 
 	gdzie TP, FP oraz FN oznaczają odpowiednio liczbę przypadków prawdziwie dodatnich, fałszywie dodatnich oraz fałszywie ujemnych. Odpowiadająca miara F-score zdefiniowana jest jako:
 
-	$$
+	\begin{equation}
 		F_{\beta} = \frac{(1 + \beta^2)\cdot Precision \cdot Recall}{(\beta^2 \cdot Precision) + Recall}
-	$$
+	\end{equation}
 
 	gdzie sugerowana wartość $\beta^2 = 0.3$. Wartości progowe oraz wartości miary F-score tworzą krzywą F-measure. 
 
@@ -353,7 +352,7 @@ Wykrywanie współistotnych obiektów (z ang. co-saliency detection) to względn
 \textcolor{red}{\textbf{TODO - 31.10.2020}}
 \section{Gradient-Induced Co-Saliency Detection}
 
-Jedną z dwóch metod wykrywania współistotnych obiektów jest metoda Gradient-Induced Co-Saliency Detection (GICD), która wykorzystuje schematy zachowań wykształcone przez człowieka.
+Jedną z dwóch metod wykrywania współistotnych obiektów jest metoda Gradient-Induced Co-Saliency Detection (GICD) \cite{zhang2020gradientinduced}, która wykorzystuje schematy zachowań wykształcone przez człowieka.
 
 \subsection{Inspiracja ludzkim zachowaniem}
 Zespół zajmujący się omawianą w tej sekcji metodą pracę nad algorytmem rozpoczął od zadania sobie pytania: jak ludzie rozpoznają współistotne obiekty w grupie obrazów? Najczęściej pierwszym etapem jest przejrzenie grupy obrazów, następnie podsumowanie wspólnych właściowści współistotnych obiektów za pomocą wiedzy ogólnej oraz rozpoznanie współistotnego obiektu dla każdego z obrazów. Proces ten został przedstawiony na pierwszej części rysunku \ref{GICDhuman}. Opierając się na schemacie ludzkiego zachowania, zespół opracował sieć podzieloną na dwa etapy. Właściowści współdzielone przez istotne obiekty z danej grupy uzyskiwane są poprzez wyuczoną wcześniej sieć spolotową. Następnie dla każdego obrazu wykorzystywany jest Gradient Inducing Module (GIM), w celu imitacji zachowania człowieka podczas porównywania konkretnej sceny do wiedzy ogólnej dotyczącej obiektów współistotnych.
@@ -361,7 +360,7 @@ Zespół zajmujący się omawianą w tej sekcji metodą pracę nad algorytmem ro
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{\ImgPath/rys/gicdhuman.png}
-	\caption{Metoda GICD została oparta na mechanizmach pochodzących od człowieka.}
+	\caption{Metoda GICD została oparta na mechanizmach pochodzących od człowieka. Źródło obrazu: \cite{zhang2020gradientinduced}}
 	\label{GICDhuman}
 \end{figure}
 
@@ -383,16 +382,16 @@ Mając grupę obrazów $\mathcal{I}=\{I_n\}_{n=1}^N$, aby zlokalizować współi
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{\ImgPath/rys/gicosadNet.png}
-	\caption{Potok przetwarzania obrazów metodą Gradient-Induced Co-saliency Detection (GICD).}
+	\caption{Potok przetwarzania obrazów metodą Gradient-Induced Co-saliency Detection (GICD). Źródło obrazu: \cite{zhang2020gradientinduced}}
 	\label{GICDnet}
 \end{figure}
 
 \subsection{Gradient Inducing Module}
 Po wyznaczeniu reprezentacji wspólnych cech $e^\dagger$ grupy obrazów $\mathcal{I}$ dla każdego obrazu, konieczne jest skupienie się na wyznaczeniu opisujących cech pokrywających się z opisem wspólnych cech. Wysokopoziomowe warstwy sieci splotowych posiadają informacje dotyczące właściwości przestrzennych obiektów, co opisane zostało w \cite{Selvaraju_2019}. Grupy cech sieci splotowej $\mathcal{F}(\cdot)$ oznaczone zostały jako $\{F^1, F^2, ..., F^5\}$. Poziom opisowości cech w sieci neuronowej może zostać zmierzony poprzez wyliczenie gradientu wyznaczone podczas optymalizacji celu. W związku z tym, zaproponowany został Gradient Inducing Module (GIM) zwiększający opisowość cechy poprzez przetworzenie informacji dotyczących gradientu. Enkoder sieci FPN posiada takie same parametry jak sieć wyznaczająca reprezentację wspólnych cech, może on zatem przedstawić obraz w przestrzeni takiej samej jak wspólna reprezentacja cech $e^\dagger$. Dla reprezentacji n-tego obrazu $e_n$, podobieństwo $c_n$ pomiędzy $e_n$, a odpowiadającej jej $e^\dagger$ może zostać zdefiniowane jako iloczyn $c_n = e_n^Te^\dagger$. Następnie wyznaczony zostaje gradient $G_n$ uwzględniając ostatnią warstwę splotową $F^5\in\mathds{R}^{w\times h\times c}$:
 
-$$
+\begin{equation}
  G_n = ReLU \left(\frac{\partial c_n}{\partial F^5_n}\right) \in \mathds{R}^{w\times h\times c}.
-$$
+\end{equation}
 
 W tej częściowej propagacji wstecznej, gradient $G_n$ pokazuje wagę odpowiadającej mu pozycji w końcowej wartości podobieństwa. Im bardziej zostanie zwiększona wartość aktywacji oraz gradient, tym bardziej zbliżona będzie pojedyncza reprezentacja cech $e_n$ do wspólnej $e^\dagger$. W związku z tym, waga postaci jądra dla poszczególnego obiektu może zostać zmierzona poprzez średnią gradientów cech. Wagi dla poszczególnych kanałów mogą zostać wyznaczone poprzez globalne uśrednienie (GAP), oznaczone $w_n = GAP(G_n) = \frac{1}{wh}\sum_i\sum_jG_n$, gdzie $i = 1, \dots, w$ oraz $j = 1, \dots, h$.  Po wyznaczeniu wagi można dostosować wysokopoziomową cechę $F_n^5$ przez dopasowanie wagi do każdej z postaci jądra $\tilde F_n^5 = F_n^5 \otimes w_n$, gdzie $\otimes$ oznacza iloczyn Hadamarda. Bez użycia modułu GIM jądra będą koncentrowały się się na wszystkich istotnych obiektach. Moduł GIM pozwala poprzez użycie informacji o gradientach na zawężenie działania jąder do jedynie współistotnego obiektu.
 
@@ -400,14 +399,13 @@ W tej częściowej propagacji wstecznej, gradient $G_n$ pokazuje wagę odpowiada
 
 Użycie GIM pozwala na dostosowanie wysokopoziomowych cech z użyciem gradientu. Podczas dekodowania, własności tych wysokopoziomowych cech będą stopniowo tracone podczas transmisji poprzez warstwy. W związku z tym zaproponowany zostaje Attention Retaining Module (ARM), łączący poszczególne pary enkoder-dekoder. Pozwala on sieci skupić się na obiektach współistotnych, pomijając pozostałe nieważne obiekty. Jako pierwsza mapa o niskiej rozdzielczości $S_n^5$ brana jest średnia dla kanału dla $\tilde F_n^5$. $P_n^5$ oznacza zredukowaną do 64 kanałów $\tilde F_n^5$. Proces dekodowania ARM można zapisać:
 
-$$
+\begin{equation}
 \begin{cases}
 	\tilde F_n^i = (S_n^{i+1}) \uparrow \astrosun F_n^i \\
 	P_n^i = \epsilon^i \left(\left(P_n^{i+1}\right)\uparrow+\mathcal{R}^i\left(\tilde F_n^i\right)\right), i \in {4, 3, 2, 1}, \\
 	S_n^i = \mathcal{D}^i (P^i_n)
 \end{cases}
-$$
-
+\end{equation}
 gdzie $(\cdot)\uparrow$ jest operacją zwiększenia próbkowania. $\mathcal{R}^i\left(\cdot\right)$ składa się z dwóch warstw splotowych oraz redukuje rozszerzone cechy $\tilde F_n^i$ do 64 kanałów. $\epsilon^i(\cdot)$ oznacza dwie odpowiadające warstwy konwolucyjne z 64 jądrami, pochodzące z dekodera. $\mathcal{D}^i(\cdot)$ pozwala na predykcje poprzez dwie warstwy splotowe wraz z warstwą sigmoidalną. Ostatnia z $S^1_n$ odpowiada warstwie wyjściowej.
 
 \subsection{Strategia trenowania Jigsaw}
@@ -416,21 +414,21 @@ Jednym z problemów zadania wykrywania współistotnych obiektów, jest to, że 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{\ImgPath/rys/jigsaw.png}
-	\caption{Przykład mini zbioru treningowego.}
+	\caption{Przykład mini zbioru treningowego. Źródło obrazu: \cite{zhang2020gradientinduced}}
 	\label{jigsaw}
 \end{figure}
 
 Funkcja kosztu zdefiniowana jest jako:
 
-$$
-\mathcal{L}(S, G) = 1 - \frac{\sum_cS(c)G(c)}{\sum_c \left[S(c) + G(c) - S(c)G(c)\right]}
-$$
+\begin{equation}
+	\mathcal{L}(S, G) = 1 - \frac{\sum_cS(c)G(c)}{\sum_c \left[S(c) + G(c) - S(c)G(c)\right]}
+\end{equation}
 
 gdzie $S$ jest predykcją, $G$ oznacza wartości prawdziwe. $c$ oznacza pozycje pikseli na obrazie. Pełna funkcja kosztu zdefiniowana jest jako:
 
-$$
-L_{total}=\sum^N_{n=1}\sum^4_{i=1}\mathcal{L}(S_n^i, G_n).
-$$
+\begin{equation}
+	L_{total}=\sum^N_{n=1}\sum^4_{i=1}\mathcal{L}(S_n^i, G_n).
+\end{equation}
 
 \section{CoEG-Net}
 Drugą z metod wykrywania współistotnych obiektów, która osiąga najlepsze wyniki jest metoda CoEG-Net \cite{fan2020rethinking}. Rozszerza ona metodę wykrywania obiektów istotnych EGNet \cite{zhao2019egnetedge} poprzez dodanie informacji dotyczących współskupienia, korzystając z metod uczenia nienadzorowanego.
@@ -443,7 +441,7 @@ W celu wyznaczenia mapy istotności $S^n$ dla obrazu wejściowego $I^n$ użyta j
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{\ImgPath/rys/coegnet.png}
-	\caption{Metoda CoEG-Net. Składa się ona z dwóch kanałów. Górny wyznacza mapy współskupienia, a dolny wyznacza istotne obiekty na obrazie. Kolejnym krokiem jest wyznaczenie iloczynów Hadamarda obu kanałów. Wynikiem metody są mapy zawierające zaznaczone obiekty współistotne.}
+	\caption{Metoda CoEG-Net. Składa się ona z dwóch kanałów. Górny wyznacza mapy współskupienia, a dolny wyznacza istotne obiekty na obrazie. Kolejnym krokiem jest wyznaczenie iloczynów Hadamarda obu kanałów. Wynikiem metody są mapy zawierające zaznaczone obiekty współistotne. Źródło obrazu: \cite{fan2020rethinking}}
 	\label{coegnet}
 \end{figure}
 
@@ -453,18 +451,20 @@ activation mapping (CAM) zaprezentowanej w \cite{cam}. Mając obraz wejściowy $
 
 Używając obrazów z etykietą dotyczącą jedynie klasy, metoda CAM tworzy mapy skupienia $M^n_c$ dla każdej klasy $c$, używając map aktywacji cech $\{X^n_k\}$.
 
-$$
+\begin{equation}
 M^n_c = \sum^K_{k=1} w^c_kX^n_k
-$$
+\end{equation}
 
 gdzie wagi $w^c$ mogą zostać wyznaczone poprzez uczenie nadzorowane z wykorzystaniem etykiet klas. Elementy przestrzenne mapy aktywacji dla klasy $M^n_c$ mogą być niezależnie wyznaczone poprzez użycie wagi $w^c$ oraz specyficznego dla każdego z kanałów deskryptora $X^n$ na pozycji $(i,j)$ jako
-$$
+\begin{equation}
 M^n_c(i,j) = (w^c)^T \cdot x^n(i,j).
-$$
+\end{equation}
+
 
 Metoda CAM jest zatem liniową transformacją przekształcającą cechę obrazu $x^n(i,j)$ na specyficzną dla klasy wartość aktywacji $M^n_c(i,j)$, używając do tego wagi $w^c$.
 
-\begin{table}[]
+\begin{table}[h]
+	\caption{Opis symboli użytych przy opisie metody.}
 	\begin{center}
 		
 		
@@ -495,15 +495,17 @@ Niestety podczas wykrywania obiektów współistotnych nie są dostępne etykiet
 
 Mając zatem grupę obrazów $\{I^n\}^N_{n=1}$ z odpowiadającymi im aktywacjami cech $X^n$ dla każdego obrazu $I^n$, metoda stara się znaleźć transformację liniową dla $X^n$, wyznaczającą mapy aktywacji $\{A^n\}$ posiadające jak największą wariancję. Może to zostać zrealizowane poprzez analizę macierzy kowarancji deskryptorów cech $\{x^n(i,j)\}$. Niech $\bar{x} = \frac{1}{Z}\sum_n\sum_{i,j}x^n(i,j)$, gdzie $Z=N\times H\times W$. Niech średnia dla znormalizowanego deskryptora wynosi $\hat{x}^n(i,j) = x^n(i,j) - \bar{x}$. Macierz kowariancji może zatem zostać zapisana jako:
 
-$$
+\begin{equation}
 Cov(\hat{x})=\frac{1}{Z}\sum_n\sum_{i,j}(\hat{x}^n(i,j) - \bar{x})(\hat{x}^n(i,j) - \bar{x})^T
-$$
+\end{equation}
+
 
 Wtedy szukana transformacja liniowa może zostać wyznaczona poprzez użycie wektora własnego $\xi^*$ odpowiadającego największej wartości własnej macierzy $Cov(\hat{x})$. Można zapisać ją jako:
 
-$$
+\begin{equation}
 A^n(i,j) = \xi^{*^T} \cdot \hat{x}^n(i,j).
-$$
+\end{equation}
+
 
 Rysunek \ref{actmaps} przedstawia mapy aktywacji dla przykładowych klas. 
 

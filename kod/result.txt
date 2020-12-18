@@ -1,0 +1,8 @@
+CoCA (COEGNET): 0.1062 mae || 0.4930 max-fm || 0.4495 mean-fm || 0.7171 max-Emeasure || 0.6788 mean-Emeasure || 0.6119 S-measure || 0.3593 AP || 0.7389 AUC.
+CoCA (COEGNET): 0.1062 mae || 0.4930 max-fm || 0.4495 mean-fm || 0.7171 max-Emeasure || 0.6788 mean-Emeasure || 0.6119 S-measure || 0.3593 AP || 0.7389 AUC.
+CoCA (GICD): 0.1260 mae || 0.5126 max-fm || 0.5044 mean-fm || 0.7149 max-Emeasure || 0.7010 mean-Emeasure || 0.6579 S-measure || 0.4296 AP || 0.8094 AUC.
+CoSal2015 (COEGNET): 0.0777 mae || 0.8358 max-fm || 0.8273 mean-fm || 0.8841 max-Emeasure || 0.8675 mean-Emeasure || 0.8384 S-measure || 0.8276 AP || 0.9237 AUC.
+CoSal2015 (GICD): 0.0707 mae || 0.8441 max-fm || 0.8351 mean-fm || 0.8865 max-Emeasure || 0.8826 mean-Emeasure || 0.8437 S-measure || 0.8050 AP || 0.9109 AUC.
+CoSOD3k (COEGNET): 0.0839 mae || 0.7577 max-fm || 0.7484 mean-fm || 0.8379 max-Emeasure || 0.8166 mean-Emeasure || 0.7780 S-measure || 0.7058 AP || 0.8664 AUC.
+CoSOD3k (GICD): 0.0794 mae || 0.7698 max-fm || 0.7628 mean-fm || 0.8478 max-Emeasure || 0.8446 mean-Emeasure || 0.7969 S-measure || 0.7119 AP || 0.8831 AUC.
+

@@ -4,45 +4,45 @@ The top-level auxiliary file: praca_dyplomowa.aux
 The style file: acm.bst
 Database file #1: ./bibliografia.bib
 Warning--empty booktitle in duts
-You've used 18 entries,
+You've used 19 entries,
             2253 wiz_defined-function locations,
-            640 strings with 7320 characters,
-and the built_in function-call counts, 7055 in all, are:
-= -- 628
-> -- 441
+            648 strings with 7589 characters,
+and the built_in function-call counts, 7392 in all, are:
+= -- 656
+> -- 468
 < -- 0
-+ -- 181
-- -- 162
-* -- 587
-:= -- 1150
-add.period$ -- 50
-call.type$ -- 18
-change.case$ -- 135
++ -- 193
+- -- 172
+* -- 621
+:= -- 1210
+add.period$ -- 53
+call.type$ -- 19
+change.case$ -- 143
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 225
-empty$ -- 511
-format.name$ -- 162
-if$ -- 1451
+cite$ -- 20
+duplicate$ -- 234
+empty$ -- 530
+format.name$ -- 172
+if$ -- 1514
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 14
-newline$ -- 89
-num.names$ -- 36
-pop$ -- 160
+int.to.str$ -- 19
+missing$ -- 15
+newline$ -- 94
+num.names$ -- 38
+pop$ -- 167
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 124
 quote$ -- 0
-skip$ -- 160
+skip$ -- 165
 stack$ -- 0
-substring$ -- 356
-swap$ -- 69
+substring$ -- 362
+swap$ -- 71
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 76
 warning$ -- 1
-while$ -- 51
-width$ -- 20
-write$ -- 171
+while$ -- 53
+width$ -- 21
+write$ -- 180
 (There was 1 warning)

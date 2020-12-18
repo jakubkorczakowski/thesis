@@ -9,3 +9,12 @@
 *.out
 *.synctex.gz
 *.fdb_latexmk
+
+kod/Data/*
+kod/Deep-Descriptor-Transforming-master/data/*
+kod/SalMaps/*
+
+*.pyc
+kod/CAM-master/data/*
+kod/test_scripts/data/*
+kod/test_scripts/cifar_net.pth
